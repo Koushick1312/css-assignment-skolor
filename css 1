@@ -1,0 +1,96 @@
+................................................html.......................................
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Global Warming: A Growing Concern</h1>
+   <h2>What is Global Warming?</h2>
+   <p>Global warming refers to the long-term rise in the average surface temperature of the Earth due to the increasing levels of greenhouse gases in the atmosphere.</p>
+   <h3>Causes and Effects</h3>
+
+   <p class="highlight">The main cause of global warming is the burning of fossil fuels, such as coal, oil, and gas, which releases carbon dioxide and other greenhouse gases into the atmosphere.</p>
+   <p id="special">The effects of global warming are widespread and varied, including rising sea levels, more frequent natural disasters, and changes in weather patterns.</p>
+
+   <a href="https://www.nasa.gov/climatechange">Learn more about global warming from NASA</a>
+   <a href="https://www.ipcc.ch/" class="external">Intergovernmental Panel on Climate Change (IPCC)</a>
+
+  <ul>
+       <li>Rising sea levels</li>
+       <li>More frequent natural disasters</li>
+       <li>Changes in weather patterns</li>
+   </ul>
+
+   <img src="shutterstock_globalwarming-1520x855.jpg" alt="Image of the Earth from space">
+</body>
+</html>
+,.....................................................css..............................................................
+     /* Element Selectors */
+h1 {
+    color: #00698f;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Class Selectors */
+.highlight {
+    background-color: #ffffcc;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.external {
+    text-decoration: none;
+    color: #008000;
+}
+
+/* ID Selectors */
+#special {
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Attribute Selectors */
+a[href^="https"] {
+    text-decoration: none;
+    color: #00698f;
+    font-size: 24px;
+}
+
+/* Pseudo-Class Selectors */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-Element Selectors */
+::selection {
+    background-color: #ffffcc;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul > li {
+    font-size: 18px;
+}
+
+
+h2 + p {
+    margin-top: 0;
+}
