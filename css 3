@@ -1,0 +1,157 @@
+..................................................html......................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>School Education</title>
+</head>
+<body>
+    <h1>Welcome to School Education</h1>
+    <h2>Typography Styles</h2>
+    <p class="serif">School is a place where students go to learn and grow. It is a place where they can develop their skills and knowledge, and prepare themselves for their future careers.</p>
+    <p class="sans-serif">Our school offers a wide range of academic programs, including math, science, English, and social studies. We also offer extracurricular activities such as sports, music, and art.</p>
+    <p class="script">At our school, we believe in providing a supportive and inclusive learning environment. We strive to create a community where all students feel welcome and valued.</p>
+    <h2>Font Sizes</h2>
+    <p class="small">Our school has a small student-to-teacher ratio, which allows for personalized attention and instruction. This helps our students to succeed and reach their full potential.</p>
+    <p class="medium">We offer a variety of courses and programs to suit different learning styles and interests. Our teachers are dedicated and passionate about their subjects, and they work hard to ensure that all students receive a high-quality education.</p>
+    <p class="large">Our school is committed to providing a safe and healthy learning environment. We have a strong focus on student well-being and mental health, and we offer a range of support services to help students succeed.</p>
+    <h2>Font Styles</h2>
+    <p class="bold">We believe that every student has the potential to succeed, and we work hard to help them achieve their goals. Our school is a place where students can grow and thrive, and we are proud of our students' achievements.</p>
+    <p class="italic">Our school has a strong focus on community service and social responsibility. We encourage our students to get involved in volunteer work and to make a positive impact on their community.</p>
+    <p class="underline">We offer a range of resources and support services to help students succeed, including tutoring, counseling, and academic advising.</p>
+    <h2>Line Height</h2>
+    <p class="tight">Our school has a strong reputation for academic excellence, and we are proud of our students' achievements. We offer a range of courses and programs to suit different learning styles and interests.</p>
+    <p class="loose">We believe that every student has the potential to succeed, and we work hard to help them achieve their goals. Our school is a place where students can grow and thrive, and we are proud of our students' achievements.</p>
+    <h2>Text Transform</h2>
+    <p class="uppercase">OUR SCHOOL IS COMMITTED TO PROVIDING A SAFE AND HEALTHY LEARNING ENVIRONMENT. WE HAVE A STRONG FOCUS ON STUDENT WELL-BEING AND MENTAL HEALTH, AND WE OFFER A RANGE OF SUPPORT SERVICES TO HELP STUDENTS SUCCEED.</p>
+    <p class="lowercase">our school is a place where students can grow and thrive. we offer a range of courses and programs to suit different learning styles and interests, and we have a strong focus on community service and social responsibility.</p>
+    <p class="capitalize">Our School Is A Place Where Students Can Grow And Thrive. We Offer A Range Of Courses And Programs To Suit Different Learning Styles And Interests, And We Have A Strong Focus On Community Service And Social Responsibility.</p>
+    <div class="box-model">
+        <h2>CSS Box Model</h2>
+        <p>Our school is a place where students can learn and grow, and we are proud of our students' achievements. We offer a range of courses and programs to suit different learning styles and interests.</p>
+    </div>
+</body>
+</html>
+...........................................................................................css...............................................
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.sans-serif {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.script {
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+}
+
+
+.small {
+    font-size: 12px;
+    text-align: center;
+}
+
+.medium {
+    font-size: 18px;
+    text-align: center;
+}
+
+.large {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.tight {
+    line-height: 1.2;
+    text-align: center;
+}
+
+.loose {
+    line-height: 2;
+    text-align: center;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.box-model {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-model h2 {
+    margin-top: 0;
+}
+
+.box-model p {
+    margin-bottom: 20px;
+}
