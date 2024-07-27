@@ -1,0 +1,135 @@
+.................................html.........................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cats: Our Feline Friends</h1>
+    <h2>Introduction</h2>
+    <p>Cats are known for their agility, playfulness, and affectionate nature. They are one of the most popular pets in the world and have been human companions for thousands of years.</p>
+    <div class="alignment">
+        <img src="https://img.freepik.com/premium-photo/group-cute-cats-are-gathered-together_180947-198.jpg" class="cat-image"> 
+    </div>
+
+    <h2>Types of Cats</h2>
+    <ul>
+        <li>Siamese</li>
+        <li>Persian</li>
+        <li>Maine Coon</li>
+    </ul>
+    <p class="highlight">Cats are highly territorial and have a strong sense of smell.
+        The cat (Felis catus), commonly referred to as the domestic cat or house cat, is a small domesticated carnivorous mammal.
+         It is the only domesticated species of the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC. It is commonly kept as a house pet and farm cat, but also ranges freely as a feral cat avoiding human contact. Valued by humans for companionship and its ability to kill vermin, the cat's retractable claws are adapted to killing small prey like mice and rats. It has a strong, flexible body, quick reflexes, and sharp teeth, and its night vision and sense of smell are well developed. It is a social species, but a solitary hunter and a crepuscular predator. Cat communication includes vocalizations like meowing, purring, trilling, hissing, growling, and grunting as well as cat body language. It can hear sounds too faint or too high in frequency for human ears, such as those made by small mammals. It secretes and perceives pheromones They use scent markings to communicate with other cats.</p>
+    <p id="special">Cats are also known for their grooming habits. They spend a significant amount of time cleaning themselves to stay healthy and look their best.</p>
+    <a href="https://www.catsoftheworld.com/" class="external">Learn more about cats</a>
+</body>
+</html>
+.....................................................................................................css/..................................................................
+/* Color Properties */
+h1 {
+    color: #ff0000;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    
+}
+.alignment{
+    text-align: center;
+}
+
+/* Gradients */
+.cat-image {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, #ff99cc, #ff66b3);
+    border-radius: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Background Properties */
+body {
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8zNF9mbHVmZnlfY2h1YmJ5X3Bhc3RlbF9jYXRzX2thd2FpaV9hZXN0aGV0aWNfM182YTJkZjRmNS03NTZiLTQyODgtOWQ4Mi1lZmRlMmE1MTA2OWRfMS5qcGc.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Class Selectors */
+.highlight {
+    font-size: 28px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.external {
+    text-decoration: none;
+    color: #008000;
+}
+
+/* ID Selectors */
+#special {
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Attribute Selectors */
+a[href^="https"] {
+    text-decoration: none;
+    color: #090181;
+    font-size: 30px;
+
+}
+
+/* Pseudo-Class Selectors */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-Element Selectors */
+::selection {
+    background-color: #ffffcc;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul > li {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold ;
+}
+
+h2 + p {
+    margin-top: 0;
+}
