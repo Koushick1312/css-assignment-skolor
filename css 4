@@ -1,0 +1,146 @@
+...........................................................html................................................
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodie Delights</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Foodie Delights</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Content-Box Model Example</h2>
+                <div class="content-box">
+                    <h3>Grilled Chicken Fajitas</h3>
+                    <p>Marinated grilled chicken, sautéed onions and bell peppers, served with warm flour tortillas, sour cream, and salsa.</p>
+                </div>
+                <p>In the content-box model, the width and height of an element only include the content area, and do not include the padding, border, or margin.</p>
+            </section>
+            <section>
+                <h2>Border-Box Model Example</h2>
+                <div class="border-box">
+                    <h3>Crispy Fish Tacos</h3>
+                    <p>Beer-battered cod, shredded lettuce, diced tomatoes, and tartar sauce, served in a crispy corn tortilla.</p>
+                </div>
+                <p>In the border-box model, the width and height of an element include the content area, padding, and border, but not the margin.</p>
+            </section>
+            <section>
+                <h2>Padding Example</h2>
+                <div class="padding-example">
+                    <h3>Roasted Vegetable Soup</h3>
+                    <p>A hearty soup made with roasted vegetables, beans, and aromatic spices, served with a swirl of creamy yogurt.</p>
+                </div>
+                <p>The padding property adds space between the content area and the border.</p>
+            </section>
+            <section>
+                <h2>Border Example</h2>
+                <div class="border-example">
+                    <h3>Grilled Steak Frites</h3>
+                    <p>Grilled ribeye steak, served with crispy fries and a side of garlic aioli.</p>
+                </div>
+                <p>The border property adds a border around the content area.</p>
+            </section>
+            <section>
+                <h2>Margin Example</h2>
+                <div class="margin-example">
+                    <h3>Chicken Caesar Salad</h3>
+                    <p>Romaine lettuce, grilled chicken, croutons, and parmesan cheese, tossed in a tangy Caesar dressing.</p>
+                </div>
+                <p>The margin property adds space between the element and other elements.</p>
+            </section>
+        </main>
+    </body>
+    </html>
+...................................................................css,,,,,,,,,,,,,,,,,,,,................................
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.content-box {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    margin: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-left: 35%;
+    
+}
+
+
+.border-box {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    margin: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 35%;
+}
+
+
+.padding-example {
+    width: 300px;
+    height: 200px;
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-left: 15%;
+}
+
+
+.border-example {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.margin-example {
+    width: 300px;
+    text-align: center;
+    margin-left: 20%;
+    padding: 20px;
+    border: 1px solid #
