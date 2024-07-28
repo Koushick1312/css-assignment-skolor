@@ -1,0 +1,132 @@
+............................................html....................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Showcase</h1>
+    </header>
+    <main>
+        <div class="product-showcase">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSetUl9WTbG15aTMl-FChdOo2F1eSS3CxOsKg&s" alt="Apple Watch">
+                <h2>Apple Watch</h2>
+                <p>Stay connected and on top of your fitness goals with the latest Apple Watch. Track your workouts, receive notifications, and control your music playlists all from your wrist.</p>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71viWVwI0JL.jpg" alt="Samsung TV">
+                <h2>Samsung 4K TV</h2>
+                <p>Experience stunning 4K resolution and immersive sound with the latest Samsung TV. Perfect for movie nights, gaming, and live sports, this TV is sure to impress.</p>
+            </div>
+            <div class="product">
+                <img src="https://i.etsystatic.com/10839446/r/il/448a9c/2309819398/il_570xN.2309819398_1vuh.jpg" alt="Nike Air Max">
+                <h2>Nike Air Max 270</h2>
+                <p>Take your shoe game to the next level with the Nike Air Max 270. Featuring a sleek design and maximum comfort, these shoes are perfect for running, training, or just lounging around.</p>
+            </div>
+            <div class="product">
+                <img src="https://i1.adis.ws/i/canon/eos-r7-lifestyle_c604337a3b374a94a080d40b43f3a920?$70-30-header-4by3-dt-jpg$" alt="Canon Camera">
+                <h2>Canon EOS Camera</h2>
+                <p>Capture life's precious moments with the Canon EOS camera. Featuring advanced autofocus and image stabilization, this camera is perfect for professionals and hobbyists alike.</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagmoyoc4lIt1k0qotkb16SvwkdVAQHOXoKw&s" alt="Sony Headphones">
+                <h2>Sony Wireless Headphones</h2>
+                <p>Immerse yourself in pure sound with the Sony wireless headphones. Featuring advanced noise cancellation and long battery life, these headphones are perfect for music lovers and commuters.</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.mos.cms.futurecdn.net/uFicTu3Ti56psJpsTGQ64C.jpg" alt="Xbox Console">
+                <h2>Xbox Series X Console</h2>
+                <p>Take your gaming to the next level with the Xbox Series X console. Featuring lightning-fast load times and stunning graphics, this console is perfect for serious gamers.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Product Showcase</p>
+    </footer>
+</body>
+</html>
+...........................................................css..................................................
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+}
+h1{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.product {
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.product:hover {
+    width: calc(25% - 20px);
+    height: 350px;
+    background-color: #f0f0f0;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .product {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        width: 100%;
+    }
+}
+
+
+.product-duration {
+    transition: all 2s ease-in-out;
+}
+footer{
+    text-align: center;
+}
+
