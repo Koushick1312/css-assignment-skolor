@@ -1,0 +1,158 @@
+/////////////////////////////////////////////html/////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Destinations</h1>
+    </header>
+    <main>
+        <div class="destination-showcase">
+            <div class="destination destination-1">
+                <img src="https://picsum.photos/200/300?image=1048" alt="Paris, France">
+                <h2>Paris, France</h2>
+                <p>Explore the City of Light, famous for its art, fashion, and cuisine.</p>
+            </div>
+            <div class="destination destination-2">
+                <img src="https://picsum.photos/200/301?image=1050" alt="Tokyo, Japan">
+                <h2>Tokyo, Japan</h2>
+                <p>Discover the vibrant city of Tokyo, known for its cutting-edge technology and rich culture.</p>
+            </div>
+            <div class="destination destination-3">
+                <img src="https://picsum.photos/200/302?image=1052" alt="New York City, USA">
+                <h2>New York City, USA</h2>
+                <p>Experience the city that never sleeps, famous for its iconic landmarks and diverse neighborhoods.</p>
+            </div>
+            <div class="destination destination-4">
+                <img src="https://picsum.photos/200/303?image=1054" alt="Sydney, Australia">
+                <h2>Sydney, Australia</h2>
+                <p>Enjoy the stunning beaches and iconic landmarks of Sydney, one of Australia's most popular cities.</p>
+            </div>
+            <div class="destination destination-5">
+                <img src="https://picsum.photos/200/304?image=1056" alt="Rome, Italy">
+                <h2>Rome, Italy</h2>
+                <p>Explore the ancient history and architecture of Rome, the Eternal City.</p>
+            </div>
+            <div class="destination destination-6">
+                <img src="https://picsum.photos/200/305?image=1058" alt="Barcelona, Spain">
+                <h2>Barcelona, Spain</h2>
+                <p>Discover the vibrant city of Barcelona, known for its stunning architecture and rich culture.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Destinations</p>
+    </footer>
+</body>
+</html>
+........................................................................................css..........................................................................
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.destination-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.destination {
+    width: calc(25% - 20px);
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h2{
+    margin-top: 20px;
+}
+
+.destination-1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.destination-2 {
+    animation: slideIn 2s ease-in-out;
+}
+
+.destination-3 {
+    animation: rotate 4s linear;
+}
+
+.destination-4 {
+    animation: scaleUp 2s ease-in-out;
+}
+
+.destination-5 {
+    animation: bounce 2s ease-in-out;
+}
+
+.destination-6 {
+    animation: fadeOut 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
