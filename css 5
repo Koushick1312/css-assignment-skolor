@@ -1,0 +1,72 @@
+........................html........
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Car Showcase</h1>
+    <div class="container">
+        <div class="item">
+            <h2>Ferrari 488 GTB</h2>
+            <p>The Ferrari 488 GTB is a mid-engined sports car produced by the Italian sports car manufacturer Ferrari. It was launched on 3 February 2015, in advance of its world première at the 2015 Geneva Motor Show.</p>
+        </div>
+        <div class="item">
+            <h2>Porsche 911 GT3</h2>
+            <p>The Porsche 911 GT3 is a high-performance version of the Porsche 911 sports car. It is a line of high-performance models, which began with the 1973 911 Carrera RS.</p>
+        </div>
+        <div class="item">
+            <h2>Chevrolet Corvette Stingray</h2>
+            <p>The Chevrolet Corvette Stingray is a mid-engined sports car produced by the American automobile manufacturer Chevrolet. It is the eighth generation of the Corvette and was launched in 2019.</p>
+        </div>
+        <div class="item">
+            <h2>Nissan GT-R Nismo</h2>
+            <p>The Nissan GT-R Nismo is a high-performance version of the Nissan GT-R sports car. It was launched in 2013 and features a number of upgrades over the standard GT-R, including a more powerful engine and improved aerodynamics.</p>
+        </div>
+        <div class="item">
+            <h2>Lamborghini Huracán Performante</h2>
+            <p>The Lamborghini Huracán Performante is a high-performance version of the Lamborghini Huracán sports car. It was launched in 2017 and features a number of upgrades over the standard Huracán, including a more powerful engine and improved aerodynamics.</p>
+        </div>
+    </div>
+</body>
+</html>
+.........................................css.............................................
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+
+}
+
+.item {
+    width: 200px;
+    background-color: #ccc;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item p {
+    text-align: justify;
+    font-size: 14px;
+    color: #666;
+}
