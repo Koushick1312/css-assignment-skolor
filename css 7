@@ -1,0 +1,144 @@
+.............................................html....................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Market Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Share Market Layout</h1>
+    <div class="grid-container">
+        <div class="item stock-prices">
+            <h2>Stock Prices</h2>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>$150.00</td>
+                    <td>+2.5%</td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>$2,500.00</td>
+                    <td>-1.2%</td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td>$3,000.00</td>
+                    <td>+0.5%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item market-news">
+            <h2>Market News</h2>
+            <ul>
+                <li><a href="#">Economic growth slows down in Q2</a></li>
+                <li><a href="#">Tech stocks experience a surge in value</a></li>
+                <li><a href="#">Oil prices drop due to increased production</a></li>
+            </ul>
+        </div>
+        <div class="item company-info">
+            <h2>Company Info</h2>
+            <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California.</p>
+            <p>Google LLC is an American multinational technology company that specializes in Internet-related services and products.</p>
+            <p>Amazon.com, Inc. is an American multinational technology company that focuses on e-commerce, cloud computing, and artificial intelligence.</p>
+        </div>
+        <div class="item trade-history">
+            <h2>Trade History</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Company</th>
+                    <th>Buy/Sell</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>2023-02-10</td>
+                    <td>Apple</td>
+                    <td>Buy</td>
+                    <td>$140.00</td>
+                </tr>
+                <tr>
+                    <td>2023-02-12</td>
+                    <td>Google</td>
+                    <td>Sell</td>
+                    <td>$2,600.00</td>
+                </tr>
+                <tr>
+                    <td>2023-02-15</td>
+                    <td>Amazon</td>
+                    <td>Buy</td>
+                    <td>$2,900.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item portfolio">
+            <h2>Portfolio</h2>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Shares</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>100</td>
+                    <td>$14,000.00</td>
+                </tr>
+                <tr>
+                    <td>Google</td>
+                    <td>50</td>
+                    <td>$125,000.00</td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td>200</td>
+                    <td>$580,000.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+..........................................css........................
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 100px;
+    max-height: 600px;
+    padding: 5%;
+    border-radius: 20px;
+
+}
+
+.item {
+    background-color: #ccc;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-prices {
+    grid-area: 1 / 1 / 2;
+   
+
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-decoration: underline;
+    text-shadow: #666;
+    text-align: center
+}
