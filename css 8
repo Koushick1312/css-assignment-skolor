@@ -1,0 +1,120 @@
+//////////////////////////html///////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollution Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pollution: A Growing Concern</h1>
+    <div class="grid-container">
+        <div class="item air-pollution">
+            <h2>Air Pollution</h2>
+            <p>Air pollution is a major environmental risk to health, causing an estimated 7 million premature deaths worldwide each year.</p>
+            <div class="air-pollution-stats">
+                <div class="stat">
+                    <h3>7 million</h3>
+                    <p>premature deaths per year</p>
+                </div>
+                <div class="stat">
+                    <h3>90%</h3>
+                    <p>of world's population affected</p>
+                </div>
+            </div>
+        </div>
+        <div class="item water-pollution">
+            <h2>Water Pollution</h2>
+            <p>Water pollution is a growing concern, with millions of people around the world lacking access to clean drinking water.</p>
+            <img src="water-pollution.jpg" alt="Water Pollution">
+        </div>
+        <div class="item land-pollution">
+            <h2>Land Pollution</h2>
+            <p>Land pollution, including soil pollution, is a significant environmental issue, with industrial activities and waste disposal contributing to the problem.</p>
+            <div class="land-pollution-facts">
+                <ul>
+                    <li>Industrial activities release toxic chemicals into the soil</li>
+                    <li>Waste disposal contaminates soil and groundwater</li>
+                    <li>Soil pollution affects plant growth and human health</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item noise-pollution">
+            <h2>Noise Pollution</h2>
+            <p>Noise pollution is a growing concern, with excessive noise levels affecting both human health and the environment.</p>
+            <audio controls>
+                <source src="noise-pollution.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="item climate-change">
+            <h2>Climate Change</h2>
+            <p>Climate change is one of the most pressing environmental issues of our time, with rising temperatures and extreme weather events having devastating consequences.</p>
+            <div class="climate-change-stats">
+                <div class="stat">
+                    <h3>1.5°C</h3>
+                    <p>global temperature increase since 1880</p>
+                </div>
+                <div class="stat">
+                    <h3>2030</h3>
+                    <p>projected year for irreversible damage</p>
+                </div>
+            </div>
+        </div>
+        <div class="item solutions">
+            <h2>Solutions</h2>
+            <p>There are many ways to reduce pollution, including reducing energy consumption, using public transport, and recycling.</p>
+            <div class="solutions-list">
+                <ul>
+                    <li>Reduce energy consumption</li>
+                    <li>Use public transport</li>
+                    <li>Recycle</li>
+                    <li>Use eco-friendly products</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+..................................................css........................................
+h1{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: dashed;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #87CEEB, #4682B4);
+
+}
+
+.air-pollution {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: linear-gradient(to bottom, #87CEEB, #4682B4);
+    color: #fff;
+}
+
+.air-pollution-stats {
+    display: flex;
+   
+}
