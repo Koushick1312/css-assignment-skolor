@@ -1,0 +1,183 @@
+....................................html..............................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing the X5 Smartphone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <h2>Experience the Future of Smartphones</h2>
+            <div class="static">
+                <h3>Powerful Performance</h3>
+                <p>With a lightning-fast processor and up to 12GB of RAM, the X5 Smartphone can handle even the most demanding tasks with ease.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXcV5VaS8Xl94D4iQ3dQ2dhHuT0uxRcqkCw&s" alt="Processor">
+            </div>
+            <div class="relative">
+                <h3>Stunning Display</h3>
+                <p>Enjoy breathtaking visuals on our 6.7-inch AMOLED display, with vibrant colors and crystal-clear clarity.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI67d9vnKwfF0wcc13zyC7xMuRMBSxsJg48w&s" alt="Display">
+            
+            <div class="fixed">
+                <h3>Long-Lasting Battery</h3>
+                <p>Stay powered up all day with our large 5000mAh battery, featuring fast charging and wireless charging capabilities.</p>
+                <img src="https://www.reliancedigital.in/wp-content/uploads/2022/08/cover_battery_health.jpg" alt="Battery">
+            </div>
+            <div class="sticky">
+                <h3>Exclusive Offers</h3>
+                <p>Get exclusive discounts, free accessories, and more when you pre-order the X5 Smartphone today!</p>
+                <button>Pre-Order Now</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <h2>Choose Your Plan</h2>
+            <button class="static-btn">128GB - $599</button>
+            <button class="relative-btn">256GB - $699</button>
+            <button class="absolute-btn">512GB - $899</button>
+            <button class="fixed-btn">Buy Now</button>
+            <button class="sticky-btn">Compare Plans</button>
+        </div>
+    </div>
+</body>
+</html>
+...............................................................css........................................
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+
+.phone {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 40px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 1%;
+}
+
+
+.screen {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: 30%;
+}
+
+.static {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: center;
+}
+
+.relative {
+    background-color: #fff;
+    left: 30;
+    right: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: center;
+  
+    
+}
+
+
+
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.static-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.relative-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.absolute-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
