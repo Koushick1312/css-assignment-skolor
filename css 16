@@ -1,0 +1,153 @@
+html////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Travel Agency</h1>
+            <button class="book-now-button">Book Now!</button>
+            <p>can offer personalized advice, suggest off-the-beaten-path destinations, and help travelers make informed decisions about their trips. Time and Cost Savings: By utilizing the services of a travel agency, individuals can save significant time and effort in planning their trips.8 Jan 2024</p>
+        </section>
+        <section class="destinations">
+            <h2>Popular Destinations</h2>
+            <ul class="destination-list">
+                <li>
+                    <img src="https://picsum.photos/200/300" alt="Paris">
+                    <h3>Paris, France</h3>
+                    <p>Explore the City of Light</p>
+                </li>
+                <li>
+                    <img src="https://picsum.photos/200/302" alt="Rome">
+                    <h3>Rome, Italy</h3>
+                    <p>Discover the Eternal City</p>
+                </li>
+                <li>
+                    <img src="https://picsum.photos/200/303" alt="New York">
+                    <h3>New York City, USA</h3>
+                    <p>Experience the City That Never Sleeps</p>
+                </li>
+                <li>
+                    <img src="https://picsum.photos/200/304" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Immerse yourself in Japanese culture</p>
+                </li>
+                <li>
+                    <img src="https://picsum.photos/200/306" alt="Sydney">
+                    <h3>Sydney, Australia</h3>
+                    <p>Enjoy the iconic Sydney Opera House</p>
+                </li>
+            </ul>
+        </section>
+        <section class="call-to-action">
+            <h2>Ready to start your journey?</h2>
+            <input type="text" class="search-input" placeholder="Search for destinations...">
+            <button class="search-button">Search</button>
+        </section>
+    </main>
+</body>
+</html>
+////////////////////////////////////////////////////////////////////css/////////////////////////////////////////
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #f0f0f0, #ccc);
+    padding: 20px;
+    text-align: center;
+}
+
+.book-now-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-now-button:hover {
+    background-color: #3e8e41;
+}
+
+.destinations {
+    padding: 20px;
+}
+
+.destination-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.destination-list li {
+    margin-bottom: 20px;
+}
+
+.destination-list li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.destination-list li h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.destination-list li p {
+    font-size: 14px;
+    color: #666;
+}
+
+.destination-list li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.call-to-action {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
