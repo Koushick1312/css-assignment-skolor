@@ -1,0 +1,150 @@
+//////////////////////////////html//////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Regestration Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="writing" name="hobbies" value="writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
+////////////////////////////////////////////////////////////////////////css///////////////////////////////////////
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+    text-align: left;
+    margin-left: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+input:valid {
+    border: 1px solid green;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin-bottom: 5px;
+}s
