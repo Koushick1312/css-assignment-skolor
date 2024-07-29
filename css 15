@@ -1,0 +1,178 @@
+///////////////////////////////////////////////html////////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <section class="transform-box translate-box">
+            <h2>Translation (translateX)</h2>
+            <img src="https://picsum.photos/200/300" alt="Translation Image">
+        </section>
+        <section class="transform-box translate-y-box">
+            <h2>Translation (translateY)</h2>
+            <img src="https://picsum.photos/200/301" alt="Translation Image">
+        </section>
+        <section class="transform-box translate-xy-box">
+            <h2>Translation (translateX and translateY)</h2>
+            <img src="https://picsum.photos/200/302" alt="Translation Image">
+        </section>
+        <section class="transform-box rotate-box">
+            <h2>Rotation (rotate)</h2>
+            <img src="https://picsum.photos/200/303" alt="Rotation Image">
+        </section>
+        <section class="transform-box scale-box">
+            <h2>Scaling (scale)</h2>
+            <img src="https://picsum.photos/200/304" alt="Scaling Image">
+        </section>
+        <section class="transform-box scale-x-box">
+            <h2>Scaling (scaleX)</h2>
+            <img src="https://picsum.photos/200/305" alt="Scaling Image">
+        </section>
+        <section class="transform-box scale-y-box">
+            <h2>Scaling (scaleY)</h2>
+            <img src="https://picsum.photos/200/306" alt="Scaling Image">
+        </section>
+        <section class="transform-box skew-x-box">
+            <h2>Skewing (skewX)</h2>
+            <img src="https://picsum.photos/200/307" alt="Skewing Image">
+        </section>
+        <section class="transform-box skew-y-box">
+            <h2>Skewing (skewY)</h2>
+            <img src="https://picsum.photos/200/308" alt="Skewing Image">
+        </section>
+        <section class="transform-box multiple-box">
+            <h2>Multiple Transforms</h2>
+            <img src="https://picsum.photos/200/309" alt="Multiple Transforms Image">
+        </section>
+    </main>
+</body>
+</html>
+.......................................................................................css..................................................
+
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.transform-box {
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transform-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.translate-box img {
+    transform: translateX(20px);
+    transition: transform 0.5s;
+}
+
+.translate-box img:hover {
+    transform: translateX(0);
+}
+
+.translate-y-box img {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.translate-y-box img:hover {
+    transform: translateY(0);
+}
+
+.translate-xy-box img {
+    transform: translate(20px, 20px);
+    transition: transform 0.5s;
+}
+
+.translate-xy-box img:hover {
+    transform: translate(0, 0);
+}
+
+.rotate-box img {
+    transform: rotate(10deg);
+    transition: transform 0.5s;
+}
+
+.rotate-box img:hover {
+    transform: rotate(0);
+}
+
+.scale-box img {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+}
+
+.scale-box img:hover {
+    transform: scale(1);
+}
+
+.scale-x-box img {
+    transform: scaleX(0.9);
+    transition: transform 0.5s;
+}
+
+.scale-x-box img:hover {
+    transform: scaleX(1);
+}
+
+.scale-y-box img {
+    transform: scaleY(0.9);
+    transition: transform 0.5s;
+}
+
+.scale-y-box img:hover {
+    transform: scaleY(1);
+}
+
+.skew-x-box img {
+    transform: skewX(10deg);
+    transition: transform 0.5s;
+}
+
+.skew-x-box img:hover {
+    transform: skewX(0);
+}
+
+.skew-y-box img {
+    transform: skewY(10deg);
+    transition: transform 0.5s;
+}
+
+.skew-y-box img:hover {
+    transform: skewY(0);
+}
+
+.multiple-box img {
+    transform: translateX(10px) rotate(5deg) scale(0.9);
+    transition: transform 0.5s;
+}
+
+.multiple-box img:hover {
+    transform: translateX(0) rotate(0) scale(1);
+}
+
+
+   
